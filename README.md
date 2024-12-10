@@ -12,10 +12,7 @@ This repository contains my solutions to various problems on LeetCode. The probl
 
 ## Languages Used
 
-- **Python**  
 - **Go**  
-- **C++**  
-- **Java**  
 
 ## Structure of the Repository
 
