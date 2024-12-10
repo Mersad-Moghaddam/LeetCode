@@ -1,5 +1,8 @@
 package main
 
+// longestPalindrome returns the longest palindromic substring of the given string.
+// Time complexity: O(n^2), where n is the length of the string.
+// Space complexity: O(n^2), for the DP table.
 func longestPalindrome(s string) string {
 	if len(s) == 0 {
 		return ""

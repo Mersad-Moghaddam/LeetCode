@@ -2,6 +2,9 @@ package main
 
 import "math"
 
+// reverse reverses the digits of a 32-bit signed integer.
+// If the reversed integer overflows, it returns 0.
+// The function handles both positive and negative integers.
 func reverse(x int) int {
 	// Define the range of 32-bit signed integers
 	const intMin = math.MinInt32 // -2^31

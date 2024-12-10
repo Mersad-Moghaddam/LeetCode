@@ -4,6 +4,9 @@ import (
 	"math"
 )
 
+// findMedianSortedArrays returns the median of two sorted arrays of integers.
+// The time complexity is O(log(min(x, y))), where x and y are the lengths of the input arrays.
+// The space complexity is O(1).
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	// Ensure nums1 is the smaller array
 	if len(nums1) > len(nums2) {
@@ -59,6 +62,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	return 0
 }
 
+// max returns the larger of two integers a and b.
 func max(a, b int) int {
 	if a > b {
 		return a
@@ -66,6 +70,7 @@ func max(a, b int) int {
 	return b
 }
 
+// min returns the minimum of two integers a and b.
 func min(a, b int) int {
 	if a < b {
 		return a

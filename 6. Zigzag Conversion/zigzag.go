@@ -2,6 +2,15 @@ package main
 
 import "strings"
 
+// convert rearranges a string into a zigzag pattern on a given number of rows
+// and reads it row by row.
+//
+// The function takes a string `s` and an integer `numRows` as inputs. It places
+// characters from `s` into `numRows` rows in a zigzag pattern, then concatenates
+// and returns the characters row by row.
+//
+// If `numRows` is 1 or the length of `s` is less than or equal to `numRows`,
+// the original string is returned unchanged.
 func convert(s string, numRows int) string {
 	// If numRows is 1 or the string length is less than the number of rows, return the string as it is
 	if numRows == 1 || len(s) <= numRows {

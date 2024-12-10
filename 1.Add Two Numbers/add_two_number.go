@@ -12,6 +12,9 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// addTwoNumbers returns the sum of two numbers represented as linked lists
+// The digits in the linked lists are stored in reverse order and each node's
+// value is in the range [0, 9].
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	dummy := &ListNode{} // Dummy node to build the result list
 	current := dummy
