@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+
+
+
 func maxArea(height []int) int {
 	left, right := 0, len(height)-1
 	maxWater := 0
