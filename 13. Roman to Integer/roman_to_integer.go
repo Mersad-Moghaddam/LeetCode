@@ -4,6 +4,16 @@ import (
 	"fmt"
 )
 
+// romanToInt converts a Roman numeral string to an integer.
+//
+// The function takes a Roman numeral string as an argument and returns the
+// corresponding integer value.
+//
+// The function works by iterating through the string and adding the values
+// of the Roman numerals to a running total. If the current value is less
+// than the next value, it means that the current value should actually be
+// subtracted from the total (because in Roman numerals, a smaller number in
+// front of a larger one means subtraction), so it is subtracted instead.
 func romanToInt(s string) int {
 	// Map of Roman numeral values
 	romanMap := map[byte]int{

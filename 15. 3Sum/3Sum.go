@@ -5,6 +5,11 @@ import (
 	"sort"
 )
 
+// threeSum finds all unique triplets in the given slice that add up to 0.
+// The function uses a two-pointer approach to find valid triplets and returns
+// them in a slice of slices.
+// Time complexity: O(n^2), where n is the length of the nums slice.
+// Space complexity: O(1).
 func threeSum(nums []int) [][]int {
 	// Sort the array
 	sort.Ints(nums)

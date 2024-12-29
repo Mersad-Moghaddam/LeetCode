@@ -4,6 +4,21 @@ import (
 	"fmt"
 )
 
+// letterCombinations generates all possible letter combinations that a given
+// digit string could represent on a traditional telephone keypad.
+//
+// The function takes a string `digits` as input, where each character is a digit
+// from '2' to '9'. Each digit maps to a set of letters, similar to the mapping
+// on a telephone keypad. For example, '2' maps to "abc", '3' maps to "def", etc.
+// The function uses a backtracking approach to explore all possible combinations
+// of letters for the given digit sequence.
+//
+// If the input string is empty, the function returns an empty slice.
+//
+// Example:
+// Input: digits = "23"
+// Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+
 func letterCombinations(digits string) []string {
 	if len(digits) == 0 {
 		return []string{}

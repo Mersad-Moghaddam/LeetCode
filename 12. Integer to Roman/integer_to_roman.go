@@ -2,7 +2,12 @@ package main
 
 import "fmt"
 
-
+// intToRoman converts an integer to its Roman numeral representation.
+//
+// The function takes an integer as an argument and returns its Roman numeral
+// representation as a string. The Roman numerals are in the descending order of
+// their values, and each numeral is repeated as many times as its value can fit
+// into the given number.
 func intToRoman(num int) string {
 	// Define the Roman numerals and corresponding values
 	romanNumerals := []struct {

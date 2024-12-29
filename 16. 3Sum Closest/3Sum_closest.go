@@ -6,6 +6,10 @@ import (
 	"sort"
 )
 
+// threeSumClosest finds the sum of three numbers in the given slice that is closest to the target.
+// The function uses a two-pointer approach to find the closest sum and returns it.
+// Time complexity: O(n^2), where n is the length of the nums slice.
+// Space complexity: O(1).
 func threeSumClosest(nums []int, target int) int {
 	sort.Ints(nums) // Sort the array
 	n := len(nums)

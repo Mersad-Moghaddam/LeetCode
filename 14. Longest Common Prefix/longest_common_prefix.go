@@ -4,6 +4,11 @@ import (
 	"fmt"
 )
 
+// longestCommonPrefix finds the longest common prefix string amongst an array of strings.
+// If there is no common prefix, it returns an empty string.
+// The function iterates through the strings, progressively trimming the prefix
+// until all strings share it as a prefix or the prefix becomes empty.
+
 func longestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {
 		return ""
