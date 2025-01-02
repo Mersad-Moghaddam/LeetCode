@@ -5,6 +5,11 @@ import (
 	"sort"
 )
 
+// fourSum finds all unique quadruplets in the given slice that sum up to the target.
+// The function uses a two-pointer approach to find valid quadruplets and returns
+// them in a slice of slices.
+// Time complexity: O(n^3), where n is the length of the nums slice.
+// Space complexity: O(n).
 func fourSum(nums []int, target int) [][]int {
 	sort.Ints(nums)
 	result := [][]int{}
