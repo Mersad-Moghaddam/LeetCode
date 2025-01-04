@@ -308,7 +308,7 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 	<section class="content container">
 		<h2>Contact Information</h2>
 		<p>Mashhad, Iran</p>
-		<p>Email: mersad.moghaddam@example.com</p>
+		<p>Email: moghaddammersad0@gmail.com</p>
 		<p>Phone: +98 912 345 6789</p>
 	</section>
 	<footer>
